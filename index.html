@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lorn Sievmay | Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="MyPortfolio.css">
+</head>
+<body class="dark-mode"> <div id="loading-screen">
+    <div class="loading-content text-center">
+      <h2 class="mono-text text-gradient">Welccome to my portfolio🩷.</h2>
+      <p class="text-muted">Preparing my portfolio...</p>
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg glass-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand mono-text" href="#"><span class="text-gradient">&lt;</span>Lorn Sievmay<span class="text-gradient">/&gt;</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link pe-4" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link pe-4" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link pe-4" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link pe-4" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link pe-4" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button class="btn theme-toggle-btn" onclick="toggleDarkMode()">
+              <i class="bi bi-sun-fill d-none"></i>
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <section id="hero" class="hero-section d-flex align-items-center">
+  <div class="container">
+
+    <div class="row align-items-center g-5">
+
+      <!-- Text Content -->
+      <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+
+       <div class="badge bg-glass text-cyan mb-3 px-3 py-2 mono-text">
+  Available for Internship & Jobs
+</div>
+
+      <h1 class="display-4 fw-bold hero-title">
+        Lorn Sievmay <span class="khmer-name">(លន សៀវម៉ៃ)</span>
+      </h1>
+
+        <h3 class="h2 mb-4 fw-semibold text-white">
+          <span class="typing">Backend Developer</span>
+        </h3>
+
+        <!-- <p class="lead hero-text text-muted mb-4">
+          Backend developer focused on building scalable APIs, designing efficient database systems, and developing secure web applications using 
+          <span class="text-white fw-medium">Laravel, Node.js, Express.js, and MySQL/PostgreSQL</span>.
+        </p> -->
+       <p class="text-muted mb-4">
+          Strong experience in backend development using PHP (Laravel) and Node.js (Express.js), with a focus on building RESTful APIs, database design, and scalable web applications. 
+          Familiar with Java, C#, and Python at a basic level, currently improving my skills in these languages through practice and small projects.
+      </p>
+
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+
+          <a href="#projects" class="btn btn-gradient">
+            View Projects
+          </a>
+
+          <a href="MY_CV/LORN SIEVMAY _ CV.pdf" download class="btn btn-outline-glass">
+            <i class="bi bi-download me-2"></i>Download CV
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-6 order-1 order-md-2 text-center">
+
+        <div class="hero-avatar-wrapper mx-auto" data-aos="zoom-in">
+          <div class="hero-avatar">
+            <img src="image/MAY.jpg" alt="Lorn Sievmay" class="hero-img">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <section class="py-5 bg-glass-dark">
+  <div class="container">
+
+    <div class="row text-center g-4">
+
+      <div class="col-6 col-md-3">
+        <h3 class="fw-bold text-gradient mono-text counter" data-target="10">0</h3>
+        <p class="text-muted small text-uppercase mb-0">Completed Projects</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h3 class="fw-bold text-gradient mono-text counter" data-target="95">0</h3>
+        <p class="text-muted small text-uppercase mb-0">API Endpoints Built</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h3 class="fw-bold text-gradient mono-text counter" data-target="4">0</h3>
+        <p class="text-muted small text-uppercase mb-0">Technologies Used</p>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <h3 class="fw-bold text-gradient mono-text counter" data-target="100">0</h3>
+        <p class="text-muted small text-uppercase mb-0">Code Commitment</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <section id="about" data-aos="fade-up" class="py-6">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title text-gradient">About Me</h2>
+        <!-- <p class="text-muted mx-auto max-w-600">Bridging system engineering logic with high-performance digital architectures.</p> -->
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-8">
+          <div class="card glass-card p-4">
+            <p class="text-muted">
+                              I'm a 4th year student, Computer Science student at the Royal University of
+                      Phnom Penh. Although I do not yet have formal work experience, I have developed 
+                      several Frontend and Backend projects during my studies and real experience with team 
+                      work when I interned at ETEC Center. I have experience building backend web applications 
+                      using PHP/Laravel and Node.js/Express.js. Skilled in RESTful APIs, JWT Authentication,  
+                       and database management MySQL, PostgreSQL and Docker. Motivated to grow as a professional Web Developer.
+            </p>
+            <hr class="border-secondary my-4">
+            <h5 class="mono-text mb-3 text-cyan">Education </h5>
+            <div class="timeline-compact">
+              <div class="timeline-item-compact">
+                <span class="text-white fw-medium">Royal University of Phnom Penh</span>
+                <span class="text-muted small d-block">Feb 2024 - Present (Year 3 Computer Science)</span>
+                <span class="text-muted small">Stack: C/C++, Java, SQL, C#,Data Structures, Algorithms, Database Systems, rchitecture Foundations, Networking</span>
+              </div>
+            </div>
+             <hr class="border-secondary my-4">
+
+            <!-- <h5 class="mono-text mb-3 text-cyan">ETEC CENTER </h5> -->
+            <div class="timeline-compact">
+              <div class="timeline-item-compact">
+                <span class="text-white fw-medium">EETEC CENTER</span>
+                <span class="text-muted small d-block">2024 - Present</span>
+                <span class="text-muted small">
+                  Basic programming language, Web Development, Backend Development.
+                </span>
+                <br>
+
+                <span class="text-muted small">
+                  Front-End  :
+      HTML, CSS, JavaScript, Bootstrap, Tailwind,      
+ Vue, React, Vue, Flutter
+ <br>
+Back-End : 
+      PHP/Laravel,
+      NodeJS/ExpressJS,
+      Java, C# & Python 
+      <br>
+ Database :
+     MySQL, SQL Server, PostgreSQL
+     <br>
+Tools :
+        Git, GitHub, Docker, Postman
+
+
+
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up" class="py-6 bg-glass-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title text-gradient">Skill</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card glass-card skill-card h-100 p-3">
+            <div class="skill-icon-wrapper mb-3 text-cyan"><i class="bi bi-hdd-network fs-2"></i></div>
+            <h5 class="fw-bold">Backend</h5>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Laravel</span><span>85%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-cyan" style="width: 85%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Node.js / Express</span><span>80%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-cyan" style="width: 80%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>PHP Architecture</span><span>75%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-cyan" style="width: 75%"></div></div></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card glass-card skill-card h-100 p-3">
+            <div class="skill-icon-wrapper mb-3 text-purple"><i class="bi bi-database-fill-gear fs-2"></i></div>
+            <h5 class="fw-bold">Databases</h5>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>PostgreSQL</span><span>80%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-purple" style="width: 80%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>MySQL</span><span>85%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-purple" style="width: 85%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>SQL Server</span><span>70%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-purple" style="width: 70%"></div></div></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card glass-card skill-card h-100 p-3">
+            <div class="skill-icon-wrapper mb-3 text-blue"><i class="bi bi-window-sidebar fs-2"></i></div>
+            <h5 class="fw-bold">Frontend</h5>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>ReactJS / VueJS</span><span>70%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-blue" style="width: 70%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Tailwind / Bootstrap</span><span>90%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-blue" style="width: 90%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>JavaScript ES6+</span><span>80%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-blue" style="width: 80%"></div></div></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card glass-card skill-card h-100 p-3">
+            <div class="skill-icon-wrapper mb-3 text-orange"><i class="bi bi-terminal-box fs-2"></i></div>
+            <h5 class="fw-bold"> Tools</h5>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Git / GitHub Workflows</span><span>85%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-orange" style="width: 85%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Docker Engines</span><span>65%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-orange" style="width: 65%"></div></div></div>
+            <div class="mb-2"><small class="text-muted d-flex justify-content-between"><span>Postman / REST APIs</span><span>90%</span></small>
+              <div class="progress progress-custom"><div class="progress-bar bg-orange" style="width: 90%"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="experience" data-aos="fade-up" class="py-6">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2 class="section-title text-gradient">Experience</h2>
+    </div>
+
+    <div class="timeline-wrapper">
+
+      <!-- Experience 1 -->
+      <!-- <div class="timeline-block" data-aos="fade-right">
+        <div class="timeline-marker"></div>
+        <div class="card glass-card p-4">
+          <span class="badge bg-glass text-cyan mb-2">Dec 2025 - Present</span>
+          <h4>Backend Training Program</h4>
+          <h6 class="text-muted">ETEC Center (Scholarship Program)</h6>
+          <p class="text-muted mb-0">
+            Specialized training in backend development including Node.js, Express.js, RESTful APIs, middleware architecture, and asynchronous programming concepts.
+          </p>
+        </div>
+      </div> -->
+      
+      <!-- Personal Backend Project -->
+      <div class="timeline-block" data-aos="fade-left">
+        <div class="timeline-marker"></div>
+        <div class="card glass-card p-4">
+          <span class="badge bg-glass text-warning mb-2">Personal Project</span>
+          <h4>RESTful API Backend System</h4>
+          <h6 class="text-muted">Self-Developed Project</h6>
+          <p class="text-muted mb-0">
+            Built a RESTful API backend using PHP/Laravel, Node.js and Express.js with JWT authentication, role-based access control, and structured MVC architecture. 
+            Designed and managed MySQL database with optimized queries and relational data models. 
+            Implemented CRUD operations, input validation, and secure middleware for API protection.
+          </p>
+        </div>
+      </div>
+
+      <!-- Team Project -->
+      <div class="timeline-block" data-aos="fade-right">
+        <div class="timeline-marker"></div>
+        <div class="card glass-card p-4">
+          <span class="badge bg-glass text-warning mb-2">Team Project</span>
+          <h4>School Management System</h4>
+          <h6 class="text-muted">Laravel RESTful Backend Project</h6>
+          <p class="text-muted mb-0">
+            Collaborated with a development team to build a scalable Learning Management System backend using Laravel.
+            Developed and maintained RESTful APIs for authentication, user management, courses, events, feedback, banners, and social connections.
+            Implemented secure authentication with Laravel Sanctum, role-based access control, OTP login system, Google OAuth integration, and password reset functionality.
+            Worked on database design, API structure, and endpoint testing to ensure system stability and performance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+      
+
+     
+
+    </div>
+  </div>
+</section>
+
+  <section id="projects" data-aos="fade-up" class="py-6 bg-glass-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title text-gradient">Backend Project</h2>
+        <!-- <p class="text-muted">Production-ready systems, secure endpoints, and relational implementations.</p> -->
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-cyan"><i class="bi bi-qr-code-scan fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Bakong KHQR Payment System</h5>
+              <p class="card-text text-muted">
+                using Front-End(Blade HTML, Bootstrap 5, JavaScript), Back-End(Laravel, MySQL, Eloquent Model), RESTful APIs and Payment(Bakong KHQR API).</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-cyan">Laravel</span><span class="badge rounded-pill bg-dark text-cyan">KHQR API</span><span class="badge rounded-pill bg-dark text-cyan">PostgreSQL</span></div>
+              <div class="d-flex gap-2"><a href="https://github.com/sievmaylorn/KHQR_BARKONG_PAYMENT" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-purple"><i class="bi bi-shield-lock-fill fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Google OAuth Authentication</h5>
+              <p class="card-text text-muted"> Built a full-stack authentication system using React, Node.js (Express), PostgreSQL, and Docker</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-purple">Node.js</span><span class="badge rounded-pill bg-dark text-purple">OAuth 2.0</span><span class="badge rounded-pill bg-dark text-purple">Express</span></div>
+              <div class="d-flex gap-2"><a href="https://github.com/sievmaylorn/google_auth_realemail" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-blue"><i class="bi bi-mortarboard-fill fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Student Management System</h5>
+              <p class="card-text text-muted">: Developed RESTful APIs using Express.js with authentication and PostgreSQL database integration.</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-blue">Laravel</span><span class="badge rounded-pill bg-dark text-blue">Eloquent</span><span class="badge rounded-pill bg-dark text-blue">MySQL</span></div>
+              <div class="d-flex gap-2"><a href="https://github.com/sievmaylorn/Student-Management-System" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-orange"><i class="bi bi-bag-check-fill fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Clothing Shop</h5>
+              <p class="card-text text-muted">Developed RESTful APIs using Express.js with JWT authentication, authorization, CRUD operations, and PostgreSQL. Built the frontend using React and Tailwind CSS.</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-orange">Express.js</span><span class="badge rounded-pill bg-dark text-orange">NodeJS</span><span class="badge rounded-pill bg-dark text-orange">MongoDB</span></div>
+              <div class="d-flex gap-2"><a href="#" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-cyan"><i class="bi bi-egg-fried fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Pizza Shop Management</h5>
+              <p class="card-text text-muted"> Built a web application using Blade, Bootstrap 5, PHP, MySQL, user authentication, and RESTful APIs.</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-cyan">Laravel Core</span><span class="badge rounded-pill bg-dark text-cyan">Pusher API</span><span class="badge rounded-pill bg-dark text-cyan">Mysql</span></div>
+              <div class="d-flex gap-2"><a href="https://github.com/sievmaylorn/PIZZA_PHP" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-purple"><i class="bi bi-box-seam-fill fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Product Management System</h5>
+              <p class="card-text text-muted">Build with ExpressJS, Authorization, RESTfuls APIs, Postgress.</p>
+              <div class="tech-stack mb-3"><span lass="badge rounded-pill bg-dark text-purple">Node.js</span><span class="badge rounded-pill bg-dark text-purple">Express REST</span><span class="badge rounded-pill bg-dark text-purple">PostgreSQL</span></div>
+              <div class="d-flex gap-2"><a href="https://github.com/sievmaylorn/Product-Management-System" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-blue"><i class="bi bi-book-half fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Library Management Module</h5>
+              <p class="card-text text-muted">Structured complex entity tracking schemas to compute borrow periods and calculate dynamic overdue fines.</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-blue">PHP MVC</span><span class="badge rounded-pill bg-dark text-blue">MySQL Relational</span></div>
+              <div class="d-flex gap-2"><a href="#" class="btn btn-sm btn-outline-glass w-100"><i class="bi bi-github me-1"></i> Source</a><a href="#" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Live</a></div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-md-6 col-lg-4">
+          <div class="card h-100 glass-card project-card">
+            <div class="project-header text-orange"><i class="bi bi-lightning-charge-fill fs-3"></i></div>
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Electronic Shop API Gateway</h5>
+              <p class="card-text text-muted">A fast, multi-endpoint commerce backend processing secure remote third-party product queries via optimized JSON handling.</p>
+              <div class="tech-stack mb-3"><span class="badge rounded-pill bg-dark text-orange">Node.js</span><span class="badge rounded-pill bg-dark text-orange">Fetch API</span><span class="badge rounded-pill bg-dark text-orange">Postman Verified</span></div>
+              <div class="d-flex gap-2"><a href="https://electronic-shop-10-06-25.vercel.app/" target="_blank" class="btn btn-sm btn-gradient w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Deploy View</a></div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+ <section id="contact" data-aos="fade-up" class="py-6">
+  <div class="container text-center max-w-600">
+
+    <h2 class="section-title text-gradient mb-3">Contact Me</h2>
+
+    <!-- <p class="text-muted mb-5">
+      Feel free to reach out for backend development opportunities, technical discussions, or collaboration on software projects.
+    </p> -->
+
+    <div class="card glass-card p-4 mb-4">
+      <!-- <h5 class="mono-text text-cyan mb-4">Contact Information</h5> -->
+
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <span class="text-muted">
+          <i class="bi bi-envelope me-2"></i>Email:
+        </span>
+        <a href="mailto:sievmaylorn04@email.com"
+           class="text-white text-decoration-none hover-cyan">
+          sievmaylorn04@email.com
+        </a>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-between">
+        <span class="text-muted">
+          <i class="bi bi-phone me-2"></i>Phone:
+        </span>
+        <a href="tel:+85570654914"
+           class="text-white text-decoration-none hover-cyan">
+          +855 70 654 914
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+
+      <div class="col-6 col-sm-4">
+        <a href="https://github.com/sievmaylorn"
+           target="_blank"
+           class="btn btn-outline-glass w-100">
+          <i class="bi bi-github me-2 text-cyan"></i>GitHub
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4">
+        <a href="https://t.me/mai_lsm04"
+           target="_blank"
+           class="btn btn-outline-glass w-100">
+          <i class="bi bi-telegram me-2 text-info"></i>Telegram
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4">
+        <a href="https://web.facebook.com/amurbabymamaa"
+           target="_blank"
+           class="btn btn-outline-glass w-100">
+          <i class="bi bi-facebook me-2 text-primary"></i>Facebook
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <footer class="bg-glass-dark text-center py-4 mt-5">
+    <!-- <p class="mb-0 text-muted small mono-text">© 2026 | Sievmay Lorn | System Engineer Paradigm</p> -->
+      <p class="mb-1 text-muted small mono-text">
+    © 2026 | Lorn Sievmay | Backend Developer Portfolio
+  </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
+  <script src="MyPortfolio.js"></script>
+
+
+</body>
+</html>
